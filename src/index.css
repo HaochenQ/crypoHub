@@ -1,13 +1,85 @@
+/* 
+====== 
+Global Styles 
+======
+*/
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+h3 {
+  margin-bottom: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.page {
+  margin: 2rem 0;
+}
+
+/**********
+pagination
+***********/
+.pagination > li > a {
+  background-color: white;
+  color: #000000;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #5a5a5a;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: #505052 !important;
+  border: solid 1px #505052 !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: #505052;
+  border: solid 1px #505052;
+}
+/* 
+====== 
+Coin Detail
+======
+*/
+.back-home {
+  margin-bottom: 2rem;
+}
+.coin-detail p {
+  text-transform: capitalize;
+  line-height: 1.8;
+  font-weight: bold;
+}
+.coin-name {
+  font-size: large;
+}
+.coin-detail span {
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: #e7e7e7;
+  margin-right: 0.5rem;
+}
+/* 
+====== 
+Chart
+======
+*/
+.charts {
+  min-height: auto;
 }
