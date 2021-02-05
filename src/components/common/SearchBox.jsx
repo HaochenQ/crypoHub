@@ -1,5 +1,5 @@
 import React from "react";
-
+import propTypes from "prop-types";
 /**
  * Search bar component takes a value and an onChange function
  */
@@ -16,6 +16,10 @@ const SearchBox = ({ value, onChange }) => {
       }}
     ></input>
   );
+};
+SearchBox.propTypes = {
+  value: propTypes.string.isRequired,
+  onChange: propTypes.func.isRequired,
 };
 
 export default SearchBox;

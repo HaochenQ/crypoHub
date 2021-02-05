@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import _ from "lodash";
 import { formatPrice, formatPercentage } from "../../utils/helper";
 import { Link } from "react-router-dom";
-
+import propTypes from "prop-types";
 /**
  * table body component takes
  * columns: array of objects{label,path}
@@ -80,5 +80,9 @@ class TableBody extends Component {
     );
   }
 }
+TableBody.propTypes = {
+  columns: propTypes.array.isRequired,
+  data: propTypes.array.isRequired,
+};
 
 export default TableBody;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Table from "./common/Table";
-
-class MoviesTable extends Component {
+import propTypes from "prop-types";
+class DataTable extends Component {
   //table column
   columns = [
     { label: "Coin", path: "Coin" },
@@ -25,5 +25,10 @@ class MoviesTable extends Component {
     );
   }
 }
+DataTable.propTypes = {
+  sortColumn: propTypes.object.isRequired,
+  onSort: propTypes.func.isRequired,
+  crypoData: propTypes.array.isRequired,
+};
 
-export default MoviesTable;
+export default DataTable;

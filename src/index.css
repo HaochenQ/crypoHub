@@ -25,6 +25,9 @@ h3 {
 .page {
   margin: 2rem 0;
 }
+.spinner-border {
+  margin-left: 45%;
+}
 
 /**********
 pagination

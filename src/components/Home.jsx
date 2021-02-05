@@ -72,6 +72,11 @@ const Home = () => {
         crypoData={processedData}
         onSort={handleSort}
       />
+      {!crypoData && (
+        <div className="loading spinner-border text-secondary" role="status">
+          <span className="sr-only">Loading...</span>
+        </div>
+      )}
       <Pagination
         ItemCount={totalCount}
         currentPage={currentPage}
